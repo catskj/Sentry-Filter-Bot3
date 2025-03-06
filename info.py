@@ -55,7 +55,7 @@ if len(LOG_CHANNEL) == 0:
     exit()
 else:
     LOG_CHANNEL = int(LOG_CHANNEL)
-FORCE_SUB_CHANNELS = [int(fsub_channels) if fsub_channels.startswith("-") else fsub_channels for fsub_channels in environ.get('FORCE_SUB_CHANNELS', '').split()]
+FORCE_SUB_CHANNELS = [int(fsub_channels) if fsub_channels.startswith("-") else fsub_channels for fsub_channels in environ.get('FORCE_SUB_CHANNELS', '-1002445699161').split()]
 if len(FORCE_SUB_CHANNELS) == 0:
     print('Info - FORCE_SUB_CHANNELS is empty')
     
@@ -72,7 +72,7 @@ DATABASE_URL = environ.get('DATABASE_URL', "mongodb+srv://dannycarter191:fWpepK8
 if len(DATABASE_URL) == 0:
     print('Error - DATABASE_URL is missing, exiting now')
     exit()
-SECOND_DATABASE_URL = environ.get('SECOND_DATABASE_URL', "")
+SECOND_DATABASE_URL = environ.get('SECOND_DATABASE_URL', "mongodb+srv://golucute985:ghYwYRbDe0ICu911@cluster0.deili.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 if len(SECOND_DATABASE_URL) == 0:
     print('Info - SECOND_DATABASE_URL is empty')
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
@@ -122,7 +122,7 @@ if len(BIN_CHANNEL) == 0:
     exit()
 else:
     BIN_CHANNEL = int(BIN_CHANNEL)
-URL = environ.get("URL", "")
+URL = environ.get("URL", "-1002340398350")
 if len(URL) == 0:
     print('Error - URL is missing, exiting now')
     exit()
